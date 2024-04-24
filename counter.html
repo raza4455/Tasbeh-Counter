@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="counter.css">
+</head>
+<body>
+    <center>
+    <div class="count">
+    <label id="countlabel" style="color: chocolate;">0</label><br>
+    <button id="increaseBtn">increase</button>
+    <button id="decreaseBtn">Decrease</button>
+    <button id="errasBtn">Erras</button>
+
+    <h2 class="h2">Tasbeeh Counter</h2>
+</div>
+</center>
+<script>
+    let count = 0;
+
+    document.getElementById("increaseBtn").onclick= function(){
+        count+=1;
+        document.getElementById("countlabel").innerHTML=count;
+    }
+
+    document.getElementById("decreaseBtn").onclick= function(){
+        count-=1;
+        document.getElementById("countlabel").innerHTML=count; 
+    }
+
+    document.getElementById("errasBtn").onclick= function(){
+        count=0;
+        document.getElementById("countlabel").innerHTML=count;
+    }
+</script>
+</body>
+</html>
